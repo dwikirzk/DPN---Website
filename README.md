@@ -1,9 +1,9 @@
-# Dewan Perwakilan Nitizen
+# Dewan Perwakilan Netizen
 sebuah website berita statis yang dibuat oleh kelompok `tanpa ijazah` beranggotakan:
 - Fahmi Nur Fadillah (25161562034)
-- Alvin
-- Farhan
-- Dwiki
+- Alvin Widyantara (25161562037)
+- Muhammad Farhan Alfarizi (25161562020) 
+- Mohamad Dwiki Rozak (25161562021)
 
 Pengaturam file & folder
 ```text
@@ -16,15 +16,15 @@ Pengaturam file & folder
 
 ## Pembagian Tugas 
 karen ada 4 anggota pembagian tugas akan dibagi per section kategori
-- Head & Main Menu (bagian atas termasuk open graph, meta tag dst) 
-- main (bagian konten inti dengan pengaturan seo sing jelas) 
+- Head & Main Menu (bagian atas termasuk open graph, meta tag dst) (Farhan)
+- main (bagian konten inti dengan pengaturan seo sing jelas) (Farhan)
   khusus bagian main ini akan dipecah menjadi 4 section lagi yaitu :
-  - News
-  - Equipmet
-  - About Us
-  - Login (berbentuk popup)
-- footer (bagian bawah biasa berisi informasi kontak dst) 
-- responsive (bagian yang mengatur perubahan desain ketika berubah ukuran perangkat)
+  - News (Diki)
+  - Equipmet (Diki)
+  - About Us (Alvin)
+  - Login (berbentuk popup) (Alvin)
+- footer (bagian bawah biasa berisi informasi kontak dst)  (Fahmi)
+- responsive (bagian yang mengatur perubahan desain ketika berubah ukuran perangkat) (Fahmi)
 
 
 ## Referensi
