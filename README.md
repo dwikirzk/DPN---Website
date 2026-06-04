@@ -1,7 +1,7 @@
 # Dewan Perwakilan Netizen
 sebuah website berita statis yang dibuat oleh kelompok `tanpa ijazah` beranggotakan:
 - Fahmi Nur Fadillah (25161562034)
-- Alvin Widyantara (25161562037)
+- Alvin Widiantara (25161562037)
 - Muhammad Farhan Alfarizi (25161562020) 
 - Mohamad Dwiki Rozak (25161562021)
 
