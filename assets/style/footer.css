@@ -1,0 +1,247 @@
+/* ============================================
+   Footer Styles - English class names
+   Hanya menggunakan warna dari :root (teal, hitam, putih, abu-abu)
+   Background: gradient from --primary to black
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, system-ui, 'Helvetica Neue', sans-serif;
+    background-color: var(--bg-light);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer.site-footer {
+    margin-top: auto;
+}
+
+.site-footer {
+    background: linear-gradient(to bottom, var(--primary-dark) 0%, #000000 100%);
+    color: var(--white);
+    padding: 3rem 1rem 1.5rem 1rem;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-main-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Brand column */
+.brand-column .brand-logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, var(--white) 0%, var(--primary-dark) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.brand-description {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 1.8rem;
+    max-width: 90%;
+}
+
+.action-buttons-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+}
+
+.btn-join {
+    background: var(--primary-dark);
+    color: var(--white);
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn-join:hover {
+    transform: translateY(-3px);
+    background: var(--primary);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-app {
+    background: transparent;
+    color: var(--white);
+    border: 1.5px solid var(--white);
+}
+
+.btn-app:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+    border-color: var(--white);
+    color: var(--white);
+}
+
+/* Link columns */
+.column-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+    color: var(--white);
+    letter-spacing: -0.2px;
+    position: relative;
+    display: inline-block;
+}
+
+.column-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 36px;
+    height: 2.5px;
+    background: var(--white);
+    border-radius: 4px;
+}
+
+.link-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.link-item {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.link-item i {
+    width: 20px;
+    font-size: 1rem;
+    color: var(--white);
+    transition: transform 0.2s;
+}
+
+.link-item:hover {
+    color: var(--white);
+    transform: translateX(4px);
+}
+
+.link-item:hover i {
+    transform: scale(1.1);
+    color: var(--white);
+}
+
+/* Bottom row */
+.footer-bottom-row {
+    margin-top: 1rem;
+}
+
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), var(--white), rgba(255, 255, 255, 0.1));
+    width: 100%;
+    margin-bottom: 1.5rem;
+    opacity: 0.5;
+}
+
+.copyright-text {
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.3px;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+    .footer-main-row {
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 1.8rem;
+    }
+    .brand-column {
+        grid-column: span 3;
+    }
+    .brand-description {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .site-footer {
+        padding: 2rem 1.2rem 1.2rem;
+    }
+    .footer-main-row {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .brand-column {
+        grid-column: span 1;
+    }
+    .column-title {
+        margin-bottom: 1rem;
+    }
+    .column-title::after {
+        width: 30px;
+        bottom: -6px;
+    }
+    .action-buttons-group {
+        justify-content: flex-start;
+    }
+    .action-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+    .brand-logo {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .action-buttons-group {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.8rem;
+    }
+    .action-btn {
+        text-align: center;
+        justify-content: center;
+    }
+    .copyright-text {
+        font-size: 0.7rem;
+    }
+}
